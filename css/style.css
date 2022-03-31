@@ -1,0 +1,147 @@
+html {
+    box-sizing: border-box;    
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+}
+
+.cont-logo {
+    height: 500px;
+    padding-left: 40px;
+}
+
+.logo {
+    position: relative;
+    left: -30px;
+    margin-top: 90px;
+    width: 300px;
+}
+
+.info {
+    margin: 0;
+    max-width: 500px;
+    font-size: 28px;
+}
+
+.cont-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 500px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    padding: 14px 16px;
+    width: 100%;
+    font-size: inherit;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+}
+
+input[type="submit"] {
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    background-color: #1877f2;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #166fe5;
+}
+
+input::placeholder {
+    color: rgba(0,0,0,0.5);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 1px solid #1877f2;
+    outline: 3px solid rgba(24, 119, 242, 0.1);
+}
+
+input:focus::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.olvide-contraseña {
+    font-size: 14px;
+    color: #1877f2;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #dddfe2;
+}
+
+.nueva-cuenta {
+    width: 210px;
+}
+
+.nueva-cuenta button {
+    width: inherit;
+    height: 48px;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 700;
+    background-color: #42b72a;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+}
+
+.nueva-cuenta button:hover {
+    cursor: pointer;
+    background-color: #36a420;
+}
+
+.new-page {
+    margin: 0;
+    text-align: center;
+}
+
+.new-page a {
+    font-weight: 600;
+    color: #000;
+}
